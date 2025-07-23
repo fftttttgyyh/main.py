@@ -20,14 +20,15 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 # >>> АВТОМАТИЧЕСКАЯ УСТАНОВКА FFMPEG НА REPLIT <<<
-if not os.path.exists("ffmpeg"):
-    os.system("curl -L https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -o ffmpeg.tar.xz")
-    os.system("tar -xf ffmpeg.tar.xz")
-    for fname in os.listdir("."):
-        if fname.startswith("ffmpeg") and "static" in fname:
-            os.rename(fname, "ffmpeg")
-    os.remove("ffmpeg.tar.xz")
+# if not os.path.exists("ffmpeg"):
+#     os.system("curl -L https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -o ffmpeg.tar.xz")
+#     os.system("tar -xf ffmpeg.tar.xz")
+#     for fname in os.listdir("."):
+#         if fname.startswith("ffmpeg") and "static" in fname:
+#             os.rename(fname, "ffmpeg")
+#     os.remove("ffmpeg.tar.xz")
 # <<< КОНЕЦ УСТАНОВКИ FFMPEG <<<
+
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "7924842430:AAG1E1ot8-YRvZCFUh86qhLXSq6k1kCre_4")
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "AIzaSyBfocrRYNLsFG3veB7J4Mf6o6BPmcvLoTA")
